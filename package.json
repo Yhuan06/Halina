@@ -1,0 +1,16 @@
+{
+  "name": "halina-interactive-site",
+  "version": "1.0.0",
+  "description": "Interactive website - Halina",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["interactive", "website", "halina"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": "14.0.0"
+  }
+}

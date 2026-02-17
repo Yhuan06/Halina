@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#actionBtn {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#actionBtn:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}
+
+#actionBtn:active {
+    transform: scale(0.95);
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: white;
+    display: none;
+}
+
+.message.show {
+    display: block;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
